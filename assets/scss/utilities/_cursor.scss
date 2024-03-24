@@ -1,0 +1,66 @@
+﻿#cursor {
+  display: none;
+  @media (hover: hover) {
+    display: block;
+  }
+  box-shadow: 0 0 10px rgba(#000, 0.2);
+  border-radius: 50%;
+  $color: rgba(var(--main-color)); //#fff; //$sub-color;
+  @at-root html {
+    *,
+    & {
+      cursor: none !important;
+    }
+  }
+  z-index: 500;
+  &,
+  &__trace {
+    // transition: all 150ms ease-out;
+    position: fixed;
+    pointer-events: none;
+    transform: none;
+    transform-origin: center center;
+    // mix-blend-mode: difference;
+    overflow: visible;
+  }
+  &__trace {
+    z-index: 499;
+    opacity: 0.5;
+    #path {
+      stroke: $color;
+    }
+    &.hover {
+      opacity: 0;
+    }
+  }
+  .cursor-circle {
+    fill: $color;
+    stroke: $color;
+    // stroke: invert(#fff, 100%);
+    stroke: #fff;
+    // 포인터
+    // transition: 150ms all;
+    transition: 150ms transform;
+    transform-origin: 50% 50%;
+  }
+  &.hover {
+    // display: block;
+    mix-blend-mode: difference;
+    opacity: 0.5;
+    // mix-blend-mode: hard-light;
+    // mix-blend-mode: inherit; // difference;
+    // mix-blend-mode: lighten;
+    .cursor-circle {
+      fill: $color;
+      stroke: $color;
+      transform: scale((80 / 16)) !important;
+    }
+    + #cursor__trace {
+      // mix-blend-mode: difference;
+      #path {
+        display: none;
+        stroke: $color;
+      }
+    }
+  }
+}

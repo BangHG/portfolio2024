@@ -1,0 +1,466 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>방현경의 포트폴리오</title>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="assets/css/common.min.css" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="cursor">
+      <svg id="cursor" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path class="cursor-circle" d="M8 14.5C11.5899 14.5 14.5 11.5899 14.5 8C14.5 4.41015 11.5899 1.5 8 1.5C4.41015 1.5 1.5 4.41015 1.5 8C1.5 11.5899 4.41015 14.5 8 14.5Z" fill="white" stroke="black" stroke-width="3" />
+      </svg>
+      <svg id="cursor__trace"><polyline id="path" fill="none" stroke="#fff" stroke-width="1.5" /></svg>
+    </div>
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <img src="favicon.png" alt="방" />
+        </div>
+        <nav class="nav">
+          <ul>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#project">WORK / PROJECT</a></li>
+          </ul>
+        </nav>
+        <div class="color-palette">
+          <button class="color-palette__toggle" type="button" onClick="changeColor()">🎨</button>
+        </div>
+      </div>
+    </header>
+
+    <section class="about" id="about">
+      <div class="container">
+        <section>
+          <h1 class="title">
+            안녕하세요<span class="ani-shake">🖐️</span><br />
+            저는 방현경입니다<span class="main-color">.</span><br />
+          </h1>
+          <p class="desc">
+            코드로 웹에 아름다운 집을 짓는다는 생각으로<br />
+            7년째 성실히 일하고 있습니다.<br />
+            의미와 가치를 전달하는 프론트엔드를 지향합니다<span class="main-color">.</span>
+          </p>
+        </section>
+        <section>
+          <h2> Skills<span class="main-color">.</span> </h2>
+          <ul>
+            <li>HTML, SCSS, Javascript, JQuery, React</li>
+            <li>Adobe Photoshop, Figma, Zeplin</li>
+            <li>Git, Github, Notion</li>
+          </ul>
+        </section>
+        <section>
+          <h2> Interested in<span class="main-color">.</span> </h2>
+          <p> React, UX/UI, SVG</p>
+        </section>
+        <section>
+          <h2> Contact<span class="main-color">.</span> </h2>
+          <ul>
+            <li><a href="mailto:banghgoff@gmail.com">이메일</a></li>
+            <li><a href="https://github.com/BangHG" target="_blank">Github</a></li>
+          </ul>
+        </section>
+      </div>
+    </section>
+
+    <section class="project" id="project">
+      <div class="project-list project-list--02">
+        <div class="project-list__intro">
+          <div class="container">
+            <h1 class="title">Work Experience. <br />게임사 그라비티</h1>
+            <div class="txt-bx">
+              <div class="progress">
+                <span class="prev"></span>
+                <span class="ing"></span>
+              </div>
+              <dl>
+                <dt>재직기간</dt>
+                <dd>2022.10 ~ 현재</dd>
+              </dl>
+              <dl>
+                <dt>주요업무</dt>
+                <dd>
+                  <p>웹서비스 Unit 소속 퍼블리싱 파트</p>
+                  <p>게임타이틀 , 이벤트, 플랫폼 웹사이트 등 구축</p>
+                  <p>웹서비스 운영, 유지보수 등 프론트엔드·퍼블리싱 업무 </p>
+                </dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+        <article class="item">
+          <div class="container">
+            <h2 class="title">그라비티 게임포털 GNJOY 리뉴얼</h2>
+            <div class="item__wrap">
+              <div class="txt-bx">
+                <dl> <dt>작업기간</dt><dd> 2022-11 ~ 2023-01</dd> </dl>
+                <dl> <dt>작업형태</dt><dd>웹/모바일</dd> </dl>
+                <a class="link" href="https://www.gnjoy.com/" target="_blank">홈페이지로 이동</a>
+                <ul class="dot-list">
+                  <li>GNB, 메인배너, 게임카드 UI/UX 리딩 및 작업</li>
+                </ul>
+                <p class="contri">기여도 100%</p>
+              </div>
+              <div class="img-bx">
+                <div class="img pc">
+                  <img src="assets/images/project/gnjoy.webp" />
+                </div>
+                <div class="img mobile">
+                  <img src="assets/images/project/gnjoy-mobile.webp" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="item">
+          <div class="container">
+            <h2 class="title">공식홈페이지 리뉴얼 제안 </h2>
+            <div class="item__wrap">
+              <div class="txt-bx">
+                <dl> <dt>작업기간</dt><dd> 2022-03</dd> </dl>
+                <dl> <dt>작업형태</dt><dd>웹</dd> </dl>
+                <a class="link" href="https://banghg.github.io/gravity-proposal/" target="_blank">홈페이지로 이동</a>
+                <ul class="dot-list">
+                  <li>WebGL, ScrollMagic, SVG 포맷을 이용한 애니메이션 등 다양한 효과를 적용한 제안시안 작업</li>
+                </ul>
+              </div>
+              <div class="img-bx">
+                <div class="img pc">
+                  <img src="assets/images/project/proposal.webp" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="item">
+          <div class="container">
+            <h2 class="title">그라비티 오피셜 리뉴얼</h2>
+            <div class="item__wrap">
+              <div class="txt-bx">
+                <dl> <dt>작업기간</dt><dd> 2023-10 ~ 2024-02</dd> </dl>
+                <dl> <dt>작업형태</dt><dd>반응형</dd> </dl>
+                <a class="link" target="_blank" href="https://www.gravity.co.kr/kr"> 홈페이지로 이동</a>
+                <ul class="dot-list">
+                  <li>회사홈페이지 리뉴얼 프로젝트 참여</li>
+                  <li>회사소개, 사업영역, 게임소개, 메인 일부 효과 작업 담당</li>
+                  <li>GSAP 스크롤애니메이션을 활용해 역동적인 화면 구성 </li>
+                </ul>
+                <p class="contri">기여도 50%</p>
+              </div>
+              <div class="img-bx">
+                <div class="img pc">
+                  <img src="assets/images/project/gravity.webp" />
+                </div>
+                <div class="img mobile">
+                  <img src="assets/images/project/gravity-mobile01.webp" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="item">
+          <div class="container">
+            <h2 class="title">이벤트/마이크로 사이트/게임 커뮤니티 구축 및 운영</h2>
+            <div class="item__wrap">
+              <div class="txt-bx">
+                <p>
+                  <a class="link" target="_blank" href="https://rob.gnjoy.com"> 커뮤니티: 라그나로크 비긴즈 </a>
+                </p>
+                <p>
+                  <a class="link" target="_blank" href="https://r20h.gravityneocyon.com/"> 마이크로사이트: 라그나로크 20 히어로즈 </a>
+                  <a class="link" target="_blank" href="https://rom.gnjoy.com/sixbirthday/index"> 마이크로사이트: 라그나로크 M 6주년 이벤트 </a>
+                </p>
+                <p>
+                  <a class="link" target="_blank" href="https://ro.gnjoy.com/event/2023/08/0802_ro1_21stAnniversaryPromotion/eventSmelt.asp"> 프로모션: 21주년 프로모션 </a>
+                  <a class="link" target="_blank" href="https://roz.gnjoy.com/event/2024/02/0207_roz_vipSupport_09R823GDF/"> 프로모션: VIP지원</a>
+                </p>
+                <p>
+                  <a class="link" target="_blank" href="https://banghg.github.io/WITH-MBTI/ko/"> MBTI 테스트 ✏️</a>
+                  <a class="link" target="_blank" href="https://banghg.github.io/FortuneTeller/"> 포춘텔러 🔮</a>
+                </p>
+                <ul class="dot-list">
+                  <li>게임런칭/사전예약/이벤트 등 마이크로 사이트 구축 및 운영업무</li>
+                  <li>커뮤니티 사이트 구축 및 운영업무</li>
+                  <li>프로모션/이벤트 페이지 작업</li>
+                  <li>
+                    컨셉추얼한 마이크로 사이트 작업 : <br />
+                    MBTI 테스트 사이트 제작<br />
+                    타로카드 컨셉 체험 & 랜덤쿠폰 지급 사이트 제작
+                  </li>
+                </ul>
+              </div>
+              <div class="img-bx">
+                <div class="img pc">
+                  <img src="assets/images/project/event.webp" />
+                </div>
+                <div class="img mobile">
+                  <img src="assets/images/project/event-mobile.webp" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="project-list project-list--01">
+        <div class="project-list__intro">
+          <div class="container">
+            <h1 class="title">Work Experience. <br />웹에이전시 매스티지</h1>
+            <div class="txt-bx">
+              <div class="progress">
+                <span class="ing"></span>
+                <span class="prev"></span>
+              </div>
+              <dl>
+                <dt>재직기간</dt>
+                <dd>2016.06 ~ 2022.10</dd>
+              </dl>
+              <dl>
+                <dt>주요업무</dt>
+                <dd>
+                  <p>홈페이지 제작팀 퍼블리싱 파트</p>
+                  <p>홈페이지 구축 퍼블리싱 작업 및 유지보수</p>
+                  <p>퍼블리싱/마크업 가이드 및 템플릿 작성</p>
+                </dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+
+        <article class="item">
+          <div class="container">
+            <h2 class="title">걸작떡볶이</h2>
+            <div class="item__wrap">
+              <div class="txt-bx">
+                <dl><dt>작업기간</dt><dd> 2021-06 ~ 2021-08</dd></dl>
+                <dl> <dt>작업형태</dt><dd>반응형</dd> </dl>
+                <a class="link" target="_blank" href="https://www.eguljak.com/main/main.html"> 홈페이지로 이동</a>
+                <ul class="dot-list">
+                  <li>걸작떡볶이 브랜드 홈페이지와 점주공간 게시판 작업</li>
+                  <li>Loading animation, 네비게이션, 유틸메뉴, 인터랙션 등 UI/UX 리딩</li>
+                  <li>다양한 애니메이션과 Fullpage 스크립트를 사용해 역동성 있는 사이트 제작</li>
+                </ul>
+                <p class="contri">기여도 100%</p>
+              </div>
+              <div class="img-bx">
+                <div class="img pc">
+                  <img src="assets/images/project/guljak.webp" />
+                </div>
+                <div class="img mobile">
+                  <img src="assets/images/project/guljak-mobile.webp" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="item">
+          <div class="container">
+            <h2 class="title"> 프리드라이프 회사소개</h2>
+            <div class="item__wrap">
+              <div class="txt-bx">
+                <dl>
+                  <dt>작업기간</dt>
+                  <dd>2020-07-01 ~ 2021-05-01</dd>
+                </dl>
+                <dl>
+                  <dt>작업형태</dt>
+                  <dd>반응형</dd>
+                </dl>
+                <a class="link" target="_blank" href="https://preedlife.com/company/main"> 홈페이지로 이동</a>
+                <ul class="dot-list">
+                  <li>프리드라이프 회사소개 홈페이지 구축</li>
+                  <li>전자청약시스템 구축 : <br />상품가입 프로세스, 고객관리 등 화면을 태블릿, 모바일 기기 최적화 하여 구축</li>
+                  <li>사내전용 그룹웨어 구축 : <br />ERP 및 그룹웨어 레이아웃, 로그인, 전자결재, 게시판 및 메일함 등 작업</li>
+                </ul>
+                <p class="contri">기여도 100%</p>
+              </div>
+              <div class="img-bx">
+                <div class="img pc">
+                  <img src="assets/images/project/preedCompany.webp" />
+                </div>
+                <div class="img mobile">
+                  <img src="assets/images/project/preedCompany-mobile.webp" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="item">
+          <div class="container">
+            <h2 class="title"> 프리드라이프</h2>
+            <div class="item__wrap">
+              <div class="txt-bx">
+                <dl>
+                  <dt>작업기간</dt>
+                  <dd>2020-02-01 ~ 2021-05-01</dd>
+                </dl>
+                <dl> <dt>작업형태</dt><dd>웹/모바일</dd> </dl>
+
+                <a class="link" target="_blank" href="https://preedlife.com"> 홈페이지로 이동</a>
+                <ul class="dot-list">
+                  <li>사외개발자와 Naver Cloud Git저장소를 통한 협업경험</li>
+                </ul>
+                <p class="contri">기여도 100%</p>
+              </div>
+              <div class="img-bx">
+                <div class="img pc">
+                  <img src="assets/images/project/preed.webp" />
+                </div>
+                <div class="img mobile">
+                  <img src="assets/images/project/preed-mobile.webp" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="item">
+          <div class="container">
+            <h2 class="title">삼성노블카운티</h2>
+            <div class="item__wrap">
+              <div class="txt-bx">
+                <dl><dt>작업기간</dt><dd> 2021-04 ~ 2021-06</dd></dl>
+                <dl> <dt>작업형태</dt><dd>반응형</dd> </dl>
+                <a class="link" target="_blank" href="https://www.samsungnc.com/kor/noble-county/main/main.html"> 홈페이지로 이동</a>
+                <ul class="dot-list">
+                  <li> 네비게이션, 인터랙션 UI/UX 리딩 및 웹사이트 제작 </li>
+                </ul>
+                <p class="contri">기여도 100%</p>
+              </div>
+              <div class="img-bx">
+                <div class="img pc">
+                  <img src="assets/images/project/samsung.webp" />
+                </div>
+                <div class="img mobile">
+                  <img src="assets/images/project/samsung-mobile.webp" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="item">
+          <div class="container">
+            <h2 class="title">한국불교문화사업단 사찰음식</h2>
+            <div class="item__wrap">
+              <div class="txt-bx">
+                <dl><dt>작업기간</dt><dd> 2019-08 ~ 2020-02</dd></dl>
+                <dl> <dt>작업형태</dt><dd>반응형</dd> </dl>
+                <a class="link" target="_blank" href="http://www.koreatemplefood.com/templefood/main/main.html"> 홈페이지로 이동</a>
+                <ul class="dot-list">
+                  <li>사찰음식 소개 웹사이트 및 체험관, 교육관, 조리사과정 홈페이지 구축 </li>
+                  <li>수업 예약 및 관리 화면, 수험서/수료증 출력, 수업 관리 화면 등 마이페이지 구축</li>
+                </ul>
+                <p class="contri">기여도 100%</p>
+              </div>
+              <div class="img-bx">
+                <div class="img pc">
+                  <img src="assets/images/project/temple.webp" />
+                </div>
+                <div class="img mobile">
+                  <img src="assets/images/project/temple-mobile.webp" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="item">
+          <div class="container">
+            <h2 class="title">허그맘허그인</h2>
+            <div class="item__wrap">
+              <div class="txt-bx">
+                <dl><dt>작업기간</dt><dd> 2019-05 ~ 2019-07</dd></dl>
+                <dl> <dt>작업형태</dt><dd>반응형</dd> </dl>
+                <a class="link" target="_blank" href="https://www.hugmom.co.kr/"> 홈페이지로 이동</a>
+                <ul class="dot-list">
+                  <li>컨텐츠, 게시판, 예약, 마이페이지, 자가진단 설문/결과, 다국어사이트 등 작업</li>
+                </ul>
+                <p class="contri">기여도 100%</p>
+              </div>
+              <div class="img-bx">
+                <div class="img pc">
+                  <img src="assets/images/project/hugmom.webp" />
+                </div>
+                <div class="img mobile">
+                  <img src="assets/images/project/hugmom-mobile.webp" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="item">
+          <div class="container">
+            <h2 class="title">치킨매니아</h2>
+            <div class="item__wrap">
+              <div class="txt-bx">
+                <dl><dt>작업기간</dt><dd> 2019-07 ~ 2019-08</dd></dl>
+                <dl> <dt>작업형태</dt><dd>반응형</dd> </dl>
+                <a class="link" target="_blank" href="http://www.cknia.com/main/main.html">
+                  <span class="link__overlay"></span>
+                  <span class="link__content">홈페이지로 이동 </span>
+                </a>
+                <ul class="dot-list">
+                  <li>메인배너 애니메이션, 패럴랙싱 UI/UX 리딩</li>
+                </ul>
+                <p class="contri">기여도 100%</p>
+              </div>
+              <div class="img-bx">
+                <div class="img pc">
+                  <img src="assets/images/project/cm.webp" />
+                </div>
+                <div class="img mobile">
+                  <img src="assets/images/project/cm-mobile.webp" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="item">
+          <div class="container">
+            <h2 class="title">차앤박피부과</h2>
+            <div class="item__wrap">
+              <div class="txt-bx">
+                <dl><dt>작업기간</dt><dd> 2018-06 ~ 2018-12</dd></dl>
+                <dl> <dt>작업형태</dt><dd>웹/모바일</dd> </dl>
+                <a class="link" target="_blank" href="https://www.cnpskin.com/"> 홈페이지로 이동</a>
+                <ul class="dot-list">
+                  <li>지점홈페이지, 클리닉 컨텐츠 작업 및 유지보수 </li>
+                  <li>메인 홈페이지 및 지점 홈페이지 관리 툴 프론트 작업 </li>
+                  <li>ICT 웹어워드코리아 2018 e-비즈니스 은상 </li>
+                  <li>웹어워드코리아 2018 전문의료분야 최우수상</li>
+                </ul>
+                <p class="contri">기여도 50%</p>
+              </div>
+              <div class="img-bx">
+                <div class="img pc">
+                  <img src="assets/images/project/cnp.webp" />
+                </div>
+                <div class="img mobile">
+                  <img src="assets/images/project/cnp-mobile.webp" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </body>
+  <script src="assets/js/cursor.js"></script>
+  <script src="assets/js/common.min.js"></script>
+</html>

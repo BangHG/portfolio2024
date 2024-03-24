@@ -1,0 +1,36 @@
+﻿body {
+  font-family: $ff-basic; //'Noto Sans KR', sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #666;
+  word-break: keep-all;
+}
+html {
+  @include lg {
+    font-size: 16px;
+  }
+  font-size: 14px;
+}
+
+::selection {
+  background-color: rgba(var(--main-color), 0.3);
+}
+
+* {
+  &:before,
+  &:after,
+  & {
+    box-sizing: border-box;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 $gutter;
+}
+
+.main-color {
+  color: rgba(var(--main-color));
+}

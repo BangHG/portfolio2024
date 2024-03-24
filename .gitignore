@@ -1,0 +1,7 @@
+﻿.vscode
+*.bak.*
+bak
+template
+node_modules
+*.map
+*.mp4

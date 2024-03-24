@@ -1,0 +1,37 @@
+﻿// $ff-basic: 'Noto Sans KR', sans-serif;
+$ff-basic: 'Pretendard', sans-serif;
+$ff-sub: 'Black Han Sans', $ff-basic;
+$gutter: 20px;
+
+:root {
+  --main-color: 89, 167, 114; //$main-color; //rgba(var(--main-color));
+}
+// .colors {
+//   color: rgb(89, 167, 114);
+//   color: rgb(121, 60, 249);
+//   color: rgb(80, 74, 188);
+//   color: rgb(205, 114, 114);
+//   color: rgb(143, 160, 176);
+// }
+
+@mixin lg {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+@mixin sm {
+  @media (min-width: 576px) {
+    @content;
+  }
+}
+@mixin xs {
+  @media (min-width: 480px) {
+    @content;
+  }
+}
