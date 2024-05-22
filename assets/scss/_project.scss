@@ -32,8 +32,9 @@
     }
     .ing {
       &:after {
+        font-family: Tossface;
         content: '🏃';
-        transform: rotateY(180deg);
+        // transform: rotateY(180deg);
         position: absolute;
         // right: 0;
         bottom: 100%;

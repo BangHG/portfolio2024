@@ -1,8 +1,4 @@
 ﻿#cursor {
-  display: none;
-  @media (hover: hover) {
-    display: block;
-  }
   box-shadow: 0 0 10px rgba(#000, 0.2);
   border-radius: 50%;
   $color: rgba(var(--main-color)); //#fff; //$sub-color;
@@ -15,6 +11,14 @@
   z-index: 500;
   &,
   &__trace {
+    display: none;
+    @media (hover: hover) {
+      display: block;
+    }
+    @media (max-width: 1024px) {
+      display: none !important;
+    }
+
     // transition: all 150ms ease-out;
     position: fixed;
     pointer-events: none;

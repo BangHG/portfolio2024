@@ -143,22 +143,17 @@ a {
 }
 
 #cursor {
-  display: none;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   border-radius: 50%;
   z-index: 500;
-}
-@media (hover: hover) {
-  #cursor {
-    display: block;
-  }
 }
 html *, html {
   cursor: none !important;
 }
 
 #cursor, #cursor__trace {
+  display: none;
   position: fixed;
   pointer-events: none;
   -webkit-transform: none;
@@ -166,6 +161,16 @@ html *, html {
   -webkit-transform-origin: center center;
           transform-origin: center center;
   overflow: visible;
+}
+@media (hover: hover) {
+  #cursor, #cursor__trace {
+    display: block;
+  }
+}
+@media (max-width: 1024px) {
+  #cursor, #cursor__trace {
+    display: none !important;
+  }
 }
 #cursor__trace {
   z-index: 499;
@@ -201,6 +206,10 @@ html *, html {
 #cursor.hover + #cursor__trace #path {
   display: none;
   stroke: rgba(var(--main-color));
+}
+
+.tossface {
+  font-family: Tossface;
 }
 
 .color-palette {
@@ -528,9 +537,8 @@ html {
   background-color: rgba(255, 255, 255, 0.8);
 }
 .project-list__intro .progress .ing:after {
+  font-family: Tossface;
   content: "🏃";
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
   position: absolute;
   bottom: 100%;
   left: 0;
@@ -790,4 +798,4 @@ html {
   margin-top: 1em;
   color: #999;
   font-size: 0.8em;
-}/*# sourceMappingURL=common.css.map */
+}
