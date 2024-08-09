@@ -12,12 +12,13 @@
   &,
   &__trace {
     display: none;
+
     @media (hover: hover) {
       display: block;
     }
-    @media (max-width: 1024px) {
-      display: none !important;
-    }
+    // @media (max-width: 1024px) {
+    //   display: none !important;
+    // }
 
     // transition: all 150ms ease-out;
     position: fixed;

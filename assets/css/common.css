@@ -167,11 +167,6 @@ html *, html {
     display: block;
   }
 }
-@media (max-width: 1024px) {
-  #cursor, #cursor__trace {
-    display: none !important;
-  }
-}
 #cursor__trace {
   z-index: 499;
   opacity: 0.5;
@@ -721,6 +716,12 @@ html {
 .project-list .item .txt-bx dl + .link {
   margin-top: 1em;
 }
+.project-list .item .txt-bx h3 {
+  font-weight: 500;
+  margin-bottom: 0.2em;
+  line-height: 1.2;
+  color: #333;
+}
 .project-list .item .txt-bx .link {
   display: block;
   margin: 0.2em auto;
@@ -798,4 +799,4 @@ html {
   margin-top: 1em;
   color: #999;
   font-size: 0.8em;
-}
+}/*# sourceMappingURL=common.css.map */
