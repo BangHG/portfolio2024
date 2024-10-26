@@ -451,6 +451,28 @@ html {
   color: inherit;
   text-decoration: underline;
 }
+.about .bx-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1em;
+}
+.about .bx-wrap .bx {
+  padding: 1em;
+  border: 1px solid rgba(var(--main-color));
+  border-radius: 10px;
+}
+.about .bx-wrap .tit {
+  font-size: 1.25em;
+  margin-bottom: 0.5em;
+}
+.about .bx-wrap .tit:after {
+  content: ".";
+  font-weight: 600;
+  color: rgba(var(--main-color));
+}
 
 .ani-shake {
   display: inline-block;

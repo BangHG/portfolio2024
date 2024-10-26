@@ -34,3 +34,31 @@ html {
 .main-color {
   color: rgba(var(--main-color));
 }
+
+// @media print {
+//   .project-list__intro .container,
+//   .project-list__intro {
+//     height: auto;
+//   }
+//   .project-list__intro .container {
+//     position: static;
+//   }
+//   html {
+//     font-size: 12px;
+//   }
+//   * {
+//     -webkit-print-color-adjust: exact;
+//     print-color-adjust: exact;
+//   }
+//   section {
+//     // break-before: page;
+//     break-after: always;
+//   }
+//   .project-list .item .img-bx .img {
+//     overflow: hidden;
+//   }
+//   .header,
+//   .cursor {
+//     display: none;
+//   }
+// }

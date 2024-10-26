@@ -5,3 +5,5 @@ template
 node_modules
 *.map
 *.mp4
+pdf.html
+pdf.md

@@ -47,3 +47,25 @@ $(window).scroll(function () {
     }
   });
 });
+
+//햇수 구하기
+const today = new Date();
+const startDay = new Date(startDate);
+const yearsDifference = today.getFullYear() - startDay.getFullYear();
+
+// 시작 날짜가 지나지 않았으면 1년을 빼야 함
+if (
+    today.getMonth() < startDay.getMonth() ||
+    (today.getMonth() === startDay.getMonth() && today.getDate() < startDay.getDate())
+) {
+    yearsDifference--;
+}
+
+$('#date').html(yearsDifference + '년')
+
+
+function redirectToDevicePage(mobileUrl, webUrl) {
+    const isMobile = /Mobi|Android/i.test(navigator.userAgent);
+    const redirectUrl = isMobile ? mobileUrl : webUrl;
+    window.open(redirectUrl, '_blank');
+}

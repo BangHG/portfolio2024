@@ -60,6 +60,26 @@
     // &:hover {
     // }
   }
+  .bx-wrap{
+    display: flex;
+    flex-wrap:wrap;
+    gap:1em;
+    .bx{
+      padding: 1em;
+      border:1px solid rgba(var(--main-color));
+      border-radius: 10px;
+    }
+    .tit{
+      font-size: 1.25em;
+      margin-bottom: 0.5em;
+      &:after{
+        content: '.';
+        font-weight: 600;
+        color:rgba(var(--main-color))
+      }
+    }
+    
+  }
 }
 
 .ani-shake {

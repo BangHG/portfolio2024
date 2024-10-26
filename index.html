@@ -2,7 +2,7 @@
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=1600, initial-scale=1.0" />
     <title>방현경의 포트폴리오</title>
 
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
@@ -52,21 +52,58 @@
           </h1>
           <p class="desc">
             코드로 웹에 아름다운 집을 짓는다는 생각으로<br />
-            8년째 성실히 일하고 있습니다.<br />
-            의미와 가치를 전달하는 프론트엔드를 지향합니다<span class="main-color">.</span>
+            <span id="date"></span>째 성실히 일하고 있습니다.<br />
+            유지보수가 용이한 재사용성 높은 코드작성과 <br />
+            의미와 가치를 전달하는 UI를 지향합니다<span class="main-color">.</span>
           </p>
         </section>
         <section>
           <h2> Skills<span class="main-color">.</span> </h2>
-          <ul>
-            <li>HTML, SCSS, Javascript, JQuery, React</li>
-            <li>Adobe Photoshop, Figma, Zeplin</li>
-            <li>Git, Github, Notion</li>
-          </ul>
+          <div class="bx-wrap">
+            <div class="bx">
+              <h3 class="tit">Front-end</h3>
+              <ul>
+                <li>HTML</li>
+                <li>SCSS</li>
+                <li>Javascript ES5 ~ ES6</li>
+                <li>JQuery</li>
+                <li>React</li>
+                <li>Vue</li>
+              </ul>
+            </div>
+            <div class="bx">
+              <h3 class="tit"> Design / Communication</h3>
+              <ul>
+                <li>Adobe Photoshop</li>
+                <li>Figma</li>
+                <li>Zeplin</li>
+                <li>Git</li>
+                <li>Notion</li>
+              </ul>
+            </div>
+            <div class="bx">
+              <h3 class="tit"> AWS</h3>
+              <ul>
+                <li>S3</li>
+                <li>CloudFront</li>
+              </ul>
+            </div>
+          </div>
         </section>
+
         <section>
           <h2> Interested in<span class="main-color">.</span> </h2>
-          <p> React, UX/UI, SVG</p>
+          <div class="bx-wrap">
+            <div class="bx">
+              <ul>
+                <li>UX/UI</li>
+                <li>SVG</li>
+                <li>Canvas</li>
+                <li>bootstrap</li>
+                <li>tailwind</li>
+              </ul>
+            </div>
+          </div>
         </section>
         <section>
           <h2> Contact<span class="main-color">.</span> </h2>
@@ -94,8 +131,8 @@
               <dl>
                 <dt>주요업무</dt>
                 <dd>
-                  <p>웹서비스 Unit 소속 퍼블리싱 파트</p>
-                  <p>게임타이틀 , 이벤트, 플랫폼 웹사이트 등 구축</p>
+                  <p>웹서비스개발그룹 소속 퍼블리싱 파트</p>
+                  <p>게임타이틀, 이벤트, 플랫폼 등 웹사이트 구축 </p>
                   <p>웹서비스 운영, 유지보수 등 프론트엔드·퍼블리싱 업무 </p>
                 </dd>
               </dl>
@@ -110,11 +147,20 @@
               <div class="txt-bx">
                 <dl> <dt>작업기간</dt><dd> 2024-05 ~ 2024-06</dd> </dl>
                 <dl> <dt>작업형태</dt><dd>웹/모바일</dd> </dl>
-                <a class="link" href="https://mirren.gnjoy.com/" target="_blank">홈페이지로 이동</a>
+                <a class="link" href="https://mirren.gnjoy.com/" target="_blank">라이브 홈페이지로 이동</a>
+                <a
+                  class="link"
+                  onclick="redirectToDevicePage(
+                    'https://banghg.github.io/mirren_reservation/mobile/reservation.html',
+                    'https://banghg.github.io/mirren_reservation/web/reservation.html'
+                    )"
+                >
+                  사전예약 백업페이지로 이동
+                </a>
                 <ul class="dot-list">
-                  <li>로딩화면 애니메이션 리딩</li>
-                  <li>사전예약 페이지 및 토너먼트 미니게임 구현 및 애니메이션, 인터렉션 리딩</li>
-                  <li>GSAP 스크롤 트리거, CSS mask 기능 등 을 활용한 애니메이션, 인터랙션 작업 리딩</li>
+                  <!-- <li>로딩화면 애니메이션 리딩</li> -->
+                  <li>사전예약 페이지 및 토너먼트 미니게임 작업 </li>
+                  <li>GSAP 스크롤 트리거, CSS mask 기능 등 을 활용한 애니메이션, 인터랙션 작업</li>
                 </ul>
                 <p class="contri">기여도 100%</p>
               </div>
@@ -139,7 +185,7 @@
                 <dl> <dt>작업형태</dt><dd>웹/모바일</dd> </dl>
                 <a class="link" href="https://www.gnjoy.com/" target="_blank">홈페이지로 이동</a>
                 <ul class="dot-list">
-                  <li>GNB, 메인배너, 게임카드 UI/UX 리딩 및 작업</li>
+                  <li>GNB, 메인배너, 게임타이틀 UI/UX 리딩 및 작업</li>
                 </ul>
                 <p class="contri">기여도 100%</p>
               </div>
@@ -232,7 +278,7 @@
               <div class="txt-bx">
                 <dl> <dt>작업기간</dt><dd> 2023-10 ~ 2024-02</dd> </dl>
                 <dl> <dt>작업형태</dt><dd>반응형</dd> </dl>
-                <a class="link" target="_blank" href="https://www.gravity.co.kr/kr"> 홈페이지로 이동</a>
+                <a class="link" target="_blank" href="https://www.gravity.co.kr/kr/game/ro1"> 홈페이지로 이동</a>
                 <ul class="dot-list">
                   <li>회사홈페이지 리뉴얼 프로젝트 참여</li>
                   <li>회사소개, 사업영역, 게임소개, 메인 애니메이션 작업 담당</li>
@@ -263,9 +309,9 @@
                 </div>
                 <div style="margin-top: 1em">
                   <h3>마이크로사이트 구축</h3>
-                  <a class="link" target="_blank" href="https://banghg.github.io/r20h">라그나로크 20 히어로즈 사전예약 </a>
-                  <a class="link" target="_blank" href="https://theragnarok.gnjoy.com/">더 라그나로크 사전예약 </a>
-                  <a class="link" target="_blank" href="https://ragnarokorigin.gnjoy.com/Event/FourthAnniversary">라그나로크 오리진 4주년 이벤트 </a>
+                  <a class="link" target="_blank" href="https://banghg.github.io/r20h">라그나로크 20 히어로즈 </a>
+                  <a class="link" target="_blank" href="https://theragnarok.gnjoy.com/">더 라그나로크 </a>
+                  <!-- <a class="link" target="_blank" href="https://ragnarokorigin.gnjoy.com/Event/FourthAnniversary">라그나로크 오리진 4주년 이벤트 </a> -->
                 </div>
                 <div style="margin-top: 1em">
                   <h3>게임 프로모션 구축</h3>
